@@ -1,0 +1,23 @@
+1) Static Binding: 
+		-> The binding which can be resolved at compile time by compiler is known as static or early binding. 
+		   Binding of all the static, private and final methods is done at compile-time.
+		   
+2) Dynamic Binding: 
+		-> In Dynamic binding compiler doesn’t decide the method to be called. 
+		   Overriding is a perfect example of dynamic binding. In overriding both parent and child classes have same method.
+		   
+		   
+3) Method Overloading:
+	-> Method Overloading is a Compile time polymorphism. 
+	In method overloading, more than one method shares the same method name with different signature in the class. 
+	In method overloading, return type can or can not be be same, but we must have to change the parameter because in java, 
+	we can not achieve the method overloading by changing only the return type of the method.
+	
+
+4) Method Overriding:
+	-> Method Overriding is a Run time polymorphism. 
+	In method overriding, derived class provides the specific implementation of the method that is already provided by the 
+	base class or parent class. 
+	In method overriding, return type must be same or co-variant (return type may vary in same direction as the derived class).
+	
+	
