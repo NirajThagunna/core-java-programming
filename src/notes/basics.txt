@@ -40,5 +40,6 @@ object" inside main. If you want to call instance methods from main, you must cr
 methods on those objects. You can, however, call other static methods directly.
 
 
+5) all class objects must be dynamically allocated.
 
 
