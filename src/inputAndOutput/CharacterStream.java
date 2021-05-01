@@ -3,33 +3,30 @@ package inputAndOutput;
 import java.io.FileReader;
 import java.io.IOException;
 
-// Read a file in a human readable format using FileReader
+// Java program illustrating that we can read a file in a human readable format using FileReader
+
 public class CharacterStream {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
-		// FileReader
-		FileReader sourceStream = null;
+		// Creating an object for the FileReader class
+		FileReader sourseStream = null;
+		
 		try {
-			sourceStream = new FileReader("test.txt");
+			sourseStream = new FileReader("F:/core_java/core_java_programming/src/files/test.txt");
 			
-			// Reading source file and writing content to target file character by character
+			// Reading the source file and writing the content into the target file character by character
 			int temp;
-			while ((temp = sourceStream.read()) != -1) {
-				System.out.println((char)temp);
+			
+			// read() method is used to return a character in ASCII form. It returns -1 at the end of the file.
+			while ((temp = sourseStream.read()) != -1) {
+				System.out.print((char) temp);
 			}
-		}
-		catch (Exception ex) {
-			System.out.println(ex.getMessage());
 		}
 		finally {
-			if (sourceStream != null) {
-				try {
-					sourceStream.close();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			}
+			// Closing the stream as no longer in use
+			if (sourseStream != null)
+				sourseStream.close();
 		}
 	}
 }
